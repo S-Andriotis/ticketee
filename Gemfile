@@ -30,7 +30,11 @@ group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
 end
 
-gem 'capybara'
+group :test do
+  gem 'capybara', '~> 2.4'
+  gem 'factory_girl_rails', "~> 4.5"
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
