@@ -17,8 +17,8 @@ RSpec.feature "Users can create new projects" do
     project = Project.find_by(name: "Sublime Text 3")
     expect(page.current_url).to eq project_url(project)
 
-    title = "Sublime Text 3 - Projects - Ticketee"
-    expect(page).to have_title title
+    title = "Sublime Text 3"
+    expect(page).to have_content title
   end
 
   scenario "when providing invalid attributes" do
