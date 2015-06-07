@@ -23,9 +23,15 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+# Provides formatting 
 gem "bootstrap-sass", "~> 3.3"
 gem "font-awesome-rails", "~> 4.3"
+
+# Allows the simple_form_for to be used
 gem "simple_form", "~> 3.1.0"
+
+# Provides authzentication features 
+gem "devise", "~> 3.4.1"
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
