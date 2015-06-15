@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  namespace :admin do
-  get 'application/index'
-  end
+
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -18,6 +16,7 @@ Rails.application.routes.draw do
      root "application#index"
      
      resources :projects, only: [:new, :create, :destroy]
+     resources :users
    end   
    
   # Example of regular route:
