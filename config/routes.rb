@@ -16,7 +16,11 @@ Rails.application.routes.draw do
      root "application#index"
      
      resources :projects, only: [:new, :create, :destroy]
-     resources :users
+     resources :users do
+       member do
+         patch :archive
+       end
+     end
    end   
    
   # Example of regular route:
